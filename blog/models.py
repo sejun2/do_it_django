@@ -14,3 +14,6 @@ class Post(models.Model):
         return f'{self.pk}{self.title}'
 
     # author: 추후 작성 예정
+
+    def get_absolute_url(self):
+        return f'/blog/{self.pk}'

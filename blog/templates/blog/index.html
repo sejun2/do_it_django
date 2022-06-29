@@ -10,7 +10,7 @@
 
 {% for p in posts %}
     <hr/>
-    <h2>제목 :: {{ p.title}}</h2>
+    <h2><a href="{{ p.get_absolute_url }}"> 제목 :: {{ p.title}}</a></h2>
     <h4>만든 시간 :: {{ p.created_at }}</h4>
     <h4>업데이트 시간 :: {{ p.updated_at }}</h4>
     <p>내용 :: {{ p.content }}</p>
