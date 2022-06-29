@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>This is Blog!!!</h1>
+<p></p>
+
+{% for p in posts %}
+    <hr/>
+    <h2>제목 :: {{ p.title}}</h2>
+    <h4>만든 시간 :: {{ p.created_at }}</h4>
+    <h4>업데이트 시간 :: {{ p.updated_at }}</h4>
+    <p>내용 :: {{ p.content }}</p>
+{% endfor %}
+</body>
+</html>
